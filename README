@@ -58,38 +58,36 @@ source env/bin/activate  # On Windows: env\Scripts\activate
 ```
 2.**Install dependencies**
 
-```console
+
 pip install -r requirements.txt
-Run database migrations:
-```
-```console
+3**Run database migrations***
+
 python manage.py makemigrations
 python manage.py migrate
-Import the historical price data from your CSV file:
-```
-```console
+### Import the historical price data from your CSV file:
+
 python manage.py import_csv path/to/your/long_format.csv
 Start the Django development server:
-```
-```console
+
+
 python manage.py runserver
-```
+
 ### Frontend Setup
 
 1.**Change to the frontend directory**
 
-```console
+
 cd frontend
 Install dependencies:
-```
-```console
+
+
 npm install
-```
+
 ###Start the Vite development server:
 
-```console
+
 npm run dev
-```
+
 Usage
 Open your browser and navigate to http://localhost:3000 (or your configured port).
 Browse the grocery catalog and click "Add" next to the desired items.
