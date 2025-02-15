@@ -10,15 +10,14 @@ Grocery Price Tracker is a web application that lets users explore historical gr
   - Displays a list of grocery items with their names and the most recent price.
   - Each item shows a placeholder image.
   - Users can add items to their cart.
+  
 - **Cart View**
-
   - Lists all selected grocery items.
   - Displays each item's latest price.
   - Calculates the total price for all items in the cart.
   - A "Compare" button toggles a comparison chart.
 
 - **Historical Price Comparison**
-
   - Compare historical price trends via an interactive line chart.
   - Visualizes price history (from 1995 to 2022) for selected grocery items.
 
@@ -48,4 +47,54 @@ Grocery Price Tracker is a web application that lets users explore historical gr
    ```bash
    git clone https://github.com/yourusername/grocery-price-tracker.git
    cd grocery-price-tracker
-   ```
+```
+### Backend Setup
+
+Create and activate a virtual environment:
+
+```bash
+python -m venv env
+source env/bin/activate  # On Windows: env\Scripts\activate
+```
+### Install dependencies:
+
+```bash
+pip install -r requirements.txt
+Run database migrations:
+```
+```bash
+python manage.py makemigrations
+python manage.py migrate
+Import the historical price data from your CSV file:
+```
+```bash
+python manage.py import_csv path/to/your/long_format.csv
+Start the Django development server:
+```
+```bash
+python manage.py runserver
+```
+### Frontend Setup
+
+### Change to the frontend directory:
+
+```bash
+cd frontend
+Install dependencies:
+```
+bash
+npm install
+Start the Vite development server:
+
+```bash
+npm run dev
+```
+Usage
+Open your browser and navigate to http://localhost:3000 (or your configured port).
+Browse the grocery catalog and click "Add" next to the desired items.
+View the cart to see a list of selected items, the total price, and to access the price comparison chart.
+
+
+### License
+This project is licensed under the MIT License.
+
