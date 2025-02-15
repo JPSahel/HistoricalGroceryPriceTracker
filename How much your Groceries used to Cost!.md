@@ -1,0 +1,51 @@
+# Grocery Price Tracker
+
+**Demo Coming Soon**
+
+Grocery Price Tracker is a web application that lets users explore historical grocery prices, add their favorite items to a cart, and compare price trends over time with interactive charts. The backend is powered by Django (with Django REST Framework) and a CSV import utility to ingest historical price data, while the frontend is built with React, Vite, TypeScript, Material UI, and Recharts.
+
+## Features
+
+- **Catalog View**
+  - Displays a list of grocery items with their names and the most recent price.
+  - Each item shows a placeholder image.
+  - Users can add items to their cart.
+- **Cart View**
+
+  - Lists all selected grocery items.
+  - Displays each item's latest price.
+  - Calculates the total price for all items in the cart.
+  - A "Compare" button toggles a comparison chart.
+
+- **Historical Price Comparison**
+
+  - Compare historical price trends via an interactive line chart.
+  - Visualizes price history (from 1995 to 2022) for selected grocery items.
+
+- **Backend API**
+  - Django REST Framework exposes endpoints for grocery data.
+  - CSV import functionality populates the database with historical price data.
+  - Handles edge cases (such as null values) gracefully.
+
+## Technology Stack
+
+- **Backend:** Django, Django REST Framework, SQLite (default)
+- **Frontend:** React, Vite, TypeScript, Material UI, Recharts
+- **Data Import:** Python (with optional Pandas for CSV transformation)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm (or yarn)
+- Python 3.8+
+- Git
+
+### Installation
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/yourusername/grocery-price-tracker.git
+   cd grocery-price-tracker
+   ```
