@@ -1,4 +1,4 @@
-# Grocery Price Tracker
+# Historical Grocery Price Tracker
 
 **Demo Coming Soon**
 
@@ -44,49 +44,50 @@ Grocery Price Tracker is a web application that lets users explore historical gr
 
 1. **Clone the Repository**
 
-   ```bash
+
    git clone https://github.com/yourusername/grocery-price-tracker.git
    cd grocery-price-tracker
-```
+
 ### Backend Setup
 
-Create and activate a virtual environment:
+1. **Create and activate a virtual environment**
 
-```bash
+```console
 python -m venv env
 source env/bin/activate  # On Windows: env\Scripts\activate
 ```
-### Install dependencies:
+2.**Install dependencies**
 
-```bash
+```console
 pip install -r requirements.txt
 Run database migrations:
 ```
-```bash
+```console
 python manage.py makemigrations
 python manage.py migrate
 Import the historical price data from your CSV file:
 ```
-```bash
+```console
 python manage.py import_csv path/to/your/long_format.csv
 Start the Django development server:
 ```
-```bash
+```console
 python manage.py runserver
 ```
 ### Frontend Setup
 
-### Change to the frontend directory:
+1.**Change to the frontend directory**
 
-```bash
+```console
 cd frontend
 Install dependencies:
 ```
-bash
+```console
 npm install
-Start the Vite development server:
+```
+###Start the Vite development server:
 
-```bash
+```console
 npm run dev
 ```
 Usage
