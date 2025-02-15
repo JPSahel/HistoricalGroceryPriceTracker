@@ -52,10 +52,10 @@ Grocery Price Tracker is a web application that lets users explore historical gr
 
 1. **Create and activate a virtual environment**
 
-```console
 python -m venv env
 source env/bin/activate  # On Windows: env\Scripts\activate
-```
+
+
 2.**Install dependencies**
 
 
